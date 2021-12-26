@@ -8,7 +8,7 @@ DevAprender e o video: https://www.youtube.com/watch?v=i6Oi-YtXnAU&t=15296s **
 Alguns dos Mini Problemas:
 
 
-1 - Recaba dois números e retorne o maior valor. Utilizando-se Ternario com diversas opções.
+1 - Receba dois números e retorne o maior valor. Utilizando-se Ternario com diversas opções.
 
 2 - Teste FizzBuzz de Algoritmo -> input divisivel por 3 return "Fizz" -> input divisivel por 5 return "Buzz" -> divisivel por 3 e por 5 Return "FizzBuzz"
 Não é divisivel por 3 nem por 5 retorna a Entrada, caso a entrada não seja um numero, retorna um tratamento de erro.
