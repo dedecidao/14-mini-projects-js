@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Constructor Functions</title>
+</head>
+<body>
+
+    <script>
+        //Pascal Case Use
+        function Livro (autor, editora, genero) {
+            this.autor = autor;
+            this.editora = editora;
+            this.genero = genero;
+            this.ler = function() {
+                console.log("Lendo o livro..");
+            }
+        }
+
+        const livro1 = new Livro("George R R Martin", "Atlas", "Aventura")
+
+        console.log(livro1);
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,31 @@
+<script>
+    //teste Fizz buzz
+    // divizel por 3 retorna fizz
+    // divisvel por 5 retorna buzz
+    // se e dividido por 3 e por 5 retorna fizzbuzz
+    // se temos um valor q nao obedece nenhuma regra retona o valor
+    //se passar um valor que nao e um numero retorna q mensagem
+
+
+    function fizzBuzz (entrada) {
+        
+        if(typeof entrada != "number")
+            return "Nao e um numero";
+        else if (entrada % 3 == 0  && entrada % 5 == 0) {
+            return "FizzBuzz";
+        }
+        else if (entrada % 3 == 0) {
+            return "Fizz";
+        }
+        else if (entrada % 5 == 0) {
+            return "Buzz" ;
+        }
+        else {
+            return entrada;
+        }
+    }
+
+
+    console.log(fizzBuzz(33));
+
+</script>

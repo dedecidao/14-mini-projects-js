@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRabalhando com Dates in Javascript</title>
+</head>
+<body>
+    
+    <script>
+        const date1 = new Date();
+        const date2 = new Date(202);
+
+        //Alterar o Ano
+        date1.setFullYear(2030)
+        /*
+        Bloco de Comentario dos 3 metodos Principais
+        do SetDateTime
+        toDateString  -- Sem as HORAS
+        toTimeString -- Apenas hora LOCAL
+        toISOString -- Forma de Gravar em um banco de Dados
+        */
+        console.log("Data 1: " + date1);
+        console.log("Data 2 : " + date2);
+    </script>
+</body>
+</html>

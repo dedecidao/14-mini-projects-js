@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medidor de Velocidade</title>
+</head>
+<body>
+        <!-- 
+            Velocidade Maxima de 70
+            input 70 output "ok"
+
+            a cada 5km acima do limite voce ganha 1 ponto na carteira
+
+            use a funçao Math.floor(1.3) return 1
+
+            caso os pontos sejam acima de 12 sua carteira sera suspensa
+         -->
+
+    <script>
+
+        function verificaVelocidade (velocidade) {
+            const velocidadePermitida = 70;
+            if (velocidade <= velocidadePermitida)
+                return "Ok!";
+            else {
+                let velocidadeAcima = velocidade - velocidadePermitida;
+                let pontos = Math.floor((velocidadeAcima / 5))
+                if (pontos <= 12) {
+                    return "Voce recebeu " + pontos + " ponto(s) na carteira";
+                } else {
+                    return "Sua Carteira foi Suspensa!"
+                }
+            }
+        }
+
+        console.log(verificaVelocidade(130));
+
+        
+    </script>
+</body>
+</html>

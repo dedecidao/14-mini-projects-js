@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Ler um objeto e exibir as propriedades das chaves e seus valores
+    caso seus valores seja string -->
+
+
+    <script>
+        const filme = {
+            diretor: "Arnold",
+            ano: 1987,
+            orcamento: 20000,
+            protagonista: "Chuck Norris"
+        }
+
+
+        function exibirPropriedade (obj) {
+            for (prop in obj) {
+                if(typeof obj[prop] == "string")
+                console.log(prop, obj[prop]);
+            }
+        }
+
+        exibirPropriedade(filme);
+    </script>
+</body>
+</html>

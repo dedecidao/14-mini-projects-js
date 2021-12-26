@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imprimi numeros primos até um determinado limite</title>
+</head>
+
+<body>
+    <script>
+        function imprimiPrimos(limite) {
+            for (let i = 2; i <= limite; i++) {
+                if (ePrimo(i)) console.log(i);
+            }
+        }//end function
+                            9                        
+        function ePrimo(numero){//Loop verifica se dentro deste intervalo 2 < 9 incrementando o divisor para testar se algum deles é divisil por todos os divisores dentro deste intervalo
+            for (let divisor = 2; divisor < numero; divisor++) {
+                if (numero % divisor === 0) {
+                    return false;
+                }
+            }
+            return true;
+        }        
+        //Chamada da função
+        imprimiPrimos(10)
+    </script>
+</body>
+</html>

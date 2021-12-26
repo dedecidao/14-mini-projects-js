@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+        0 a 59  : F  --- indice0
+        60 a 69 : E  ---indice1
+        70 a 79 : D  ---indice2
+        80 a 89 : C  ---indice3
+        90 a 99 : B ---indice4
+        100     : A ---indice5
+     -->
+    <script>
+
+        //Definindo o input
+        const notas = [100,100,97];
+        const grade = {F: 59, E: 69, D: 79, C: 89, B: 99, A: 100}
+
+        const retornaMedia = (arrayNotas) => {
+            let media = 0;
+            let soma = 0;
+            for (nota of arrayNotas) {
+                soma += nota
+            }
+            media = soma / (arrayNotas.length)
+            for (prop in grade) {
+                if(media <= grade[prop]){
+                    return prop;
+                }
+            }
+        }
+        console.log(retornaMedia(notas));
+        
+    </script>
+</body>
+</html>

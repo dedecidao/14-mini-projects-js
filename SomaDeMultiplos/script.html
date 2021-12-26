@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <script>
+        //armazena os multiplos de 3 e de 5 e retorna sua soma
+        // example 10 
+        // de 3 em 10 = 3, 6, 9
+        // de 5  em 10 = 5 e 10
+        //soma 5 + 10+ 3 + 6 + 9 = 33 saida esperada
+
+        function somaMultiplos3e5(num) {
+            let contador = 1;
+            let multi3 = 0, multi5 = 0;
+
+            while (contador <= num) {
+
+                if (contador % 3 == 0) {
+                    multi3 += contador;
+                }
+                if (contador % 5 == 0) {
+                    multi5 += contador;
+                }
+                contador++;
+            }
+            return multi3 + multi5;
+        }
+
+        console.log(somaMultiplos3e5(10))
+    </script>
+</body>
+
+</html>
